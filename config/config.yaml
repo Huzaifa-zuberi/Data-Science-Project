@@ -1,0 +1,61 @@
+data:
+  raw_path: "data/raw/telco_churn.csv"
+  processed_path: "data/processed/telco_churn_clean.csv"
+  train_path: "data/processed/train.csv"
+  test_path: "data/processed/test.csv"
+  random_seed: 42
+  test_size: 0.2
+  synthetic:
+    n_samples: 10000
+    churn_rate: 0.27
+
+features:
+  numerical:
+    - tenure
+    - monthly_charges
+    - total_charges
+    - age
+    - num_services
+    - avg_monthly_usage_gb
+    - support_tickets
+    - contract_length_months
+  categorical:
+    - gender
+    - partner
+    - dependents
+    - phone_service
+    - multiple_lines
+    - internet_service
+    - online_security
+    - online_backup
+    - device_protection
+    - tech_support
+    - streaming_tv
+    - streaming_movies
+    - contract_type
+    - paperless_billing
+    - payment_method
+    - satisfaction_score
+
+modeling:
+  models:
+    - logistic_regression
+    - random_forest
+    - xgboost
+    - lightgbm
+    - neural_network
+  cv_folds: 5
+  scoring: "roc_auc"
+  hyperopt_evals: 50
+
+monitoring:
+  drift_threshold: 0.05
+  alert_channels:
+    - console
+    - log_file
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  model_path: "models/saved/best_model.pkl"
+  preprocessor_path: "models/saved/preprocessor.pkl"
