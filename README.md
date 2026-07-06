@@ -1,5 +1,12 @@
 # Telco Customer Churn Prediction Platform
 
+[![CI](https://github.com/Huzaifa-zuberi/Data-Science-Project/actions/workflows/ci.yml/badge.svg)](https://github.com/Huzaifa-zuberi/Data-Science-Project/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/License-MIT-success)](LICENSE)
+![Last Commit](https://img.shields.io/github/last-commit/Huzaifa-zuberi/Data-Science-Project)
+![Stars](https://img.shields.io/github/stars/Huzaifa-zuberi/Data-Science-Project?style=social)
+
+**Repo:** [Huzaifa-zuberi/Data-Science-Project](https://github.com/Huzaifa-zuberi/Data-Science-Project)
+
 ## End-to-End Machine Learning Pipeline
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
