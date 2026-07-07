@@ -42,7 +42,7 @@ A **production-grade** data science project that predicts customer churn for a t
 ## Project Structure
 
 ```
-telco-churn-prediction/
+Data-Science-Project/
 ├── src/
 │   ├── data/           # Data ingestion, cleaning, feature engineering
 │   │   ├── ingest.py   # Synthetic data generator (self-contained)
@@ -85,8 +85,8 @@ telco-churn-prediction/
 ### 1. Installation
 
 ```bash
-git clone https://github.com/yourusername/telco-churn-prediction
-cd telco-churn-prediction
+git clone https://github.com/Huzaifa-zuberi/Data-Science-Project.git
+cd Data-Science-Project
 pip install -r requirements.txt
 ```
 
@@ -288,4 +288,3 @@ When discussing this project in interviews, emphasize:
 ## License
 
 MIT
-"# Data-Science-Project" 
